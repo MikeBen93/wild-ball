@@ -11,7 +11,7 @@ public class ScriptedObstacleController : MonoBehaviour
 
     private Vector3 _startPosition;
     private Vector3 _endPosition;
-    private int _rotationDirection = 1;
+    private int _rotationDirection = -1;
 
     private float _t;
     // Start is called before the first frame update

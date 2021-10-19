@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class LoadLevelScene : MonoBehaviour
 {
     private Scene _currentScene;
-    private int _finalLevelNumber = 5;
+    private int _finalLevelNumber = 6;
 
     private void Start()
     {
@@ -30,8 +30,13 @@ public class LoadLevelScene : MonoBehaviour
     public void LoadNextLevel()
     {
         int levelIndex = GetCurrentLevelNumber();
-        if(levelIndex!= _finalLevelNumber) SceneManager.LoadScene(++levelIndex);
-        else SceneManager.LoadScene(0);
+        if (levelIndex != _finalLevelNumber)
+        {
+            ++levelIndex;
+            SceneManager.LoadScene(levelIndex);
+        }
+        else levelIndex = 0;
+        
     }
 
     public void ReloadCurrentLevel()

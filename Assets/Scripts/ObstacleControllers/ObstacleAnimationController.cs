@@ -24,7 +24,7 @@ public class ObstacleAnimationController : MonoBehaviour
     private void AnimationStateController()
     {
         if (
-            _anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= _anim.GetCurrentAnimatorStateInfo(0).length &&
+            _anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1 &&
             _anim.GetCurrentAnimatorStateInfo(0).IsName("ObstacleAnimationIdle")
             )
         {

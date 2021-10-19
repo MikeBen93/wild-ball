@@ -15,6 +15,7 @@ public class InGameCanvasController : MonoBehaviour
     private LoadLevelScene _sceneController;
 
     [SerializeField] private Text _levelNumberText;
+    [SerializeField] private Text _scoreText;
 
     private void Start()
     {
@@ -22,6 +23,9 @@ public class InGameCanvasController : MonoBehaviour
         FetchSceneController();
     }
 
+    /// <summary>
+    /// Function to fetch child components on canvas to control them
+    /// </summary>
     private void InitiatePanels()
     {
         _playingPanel = transform.GetChild(0).gameObject;
@@ -29,6 +33,13 @@ public class InGameCanvasController : MonoBehaviour
         _pausePanel = transform.GetChild(1).gameObject;
         _backToGameButton = _pausePanel.transform.GetChild(2).gameObject;
         _gamePauseText = _pausePanel.transform.GetChild(0).gameObject.GetComponent<Text>();
+        _scoreText.text = $"Current score: {CurrentScore.Score}";
+    }
+
+    public void CanvasIncrementScore()
+    {
+        CurrentScore.IncreamentScore();
+        _scoreText.text = $"Current score: {CurrentScore.Score}";
     }
 
     public void FetchSceneController()

@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 5904246234852705968, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5904246235231691788, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 5904246235231691788, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.17
+      value: -2.8300004
       objectReference: {fileID: 0}
     - target: {fileID: 5904246235231691788, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
@@ -70,12 +70,12 @@ PrefabInstance:
     - target: {fileID: 5904246235231691791, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
       propertyPath: m_Name
-      value: BackwardScriptedObstacle (3)
+      value: BackwardScriptedObstacle
       objectReference: {fileID: 0}
     - target: {fileID: 5904246236042930981, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f53a38fb1b3432a499b9f9e6e4c5f9b6, type: 3}
