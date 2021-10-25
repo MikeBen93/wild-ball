@@ -7,6 +7,7 @@ public class MainMenuInitialization : MonoBehaviour
     private void Awake()
     {
         Debug.Log("MainMenu Awake");
-        CurrentScore.ResetScore();
+        CurrentScore.TotalScoreReset();
+        CurrentScore.LevelScoreReset();
     }
 }
